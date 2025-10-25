@@ -69,7 +69,7 @@ label_encoder = joblib.load(ENCODER_PATH)
 # -------------------------------
 mp_pose = mp.solutions.pose
 mp_drawing = mp.solutions.drawing_utils
-pose_detector = mp_pose.Pose(static_image_mode=True, model_complexity=2,
+pose_detector = mp_pose.Pose(static_image_mode=True, model_complexity=1,
                              min_detection_confidence=0.5)
 
 # -------------------------------
